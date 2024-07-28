@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.database.data.FriendViewModel" />
+
+        <variable
+            name="activity"
+            type="com.example.database.AddActivity" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".AddActivity">
+
+        <EditText
+            style="@style/editTextAdd"
+            android:hint="@string/nama"
+            android:autofillHints="name"
+            android:text='@={viewModel.name}'
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <EditText
+            style="@style/editTextAdd"
+            android:hint="@string/hobi"
+            android:autofillHints="name"
+            android:text='@={viewModel.hobby}'
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <EditText
+            style="@style/editTextAdd"
+            android:hint="@string/sekolah"
+            android:autofillHints="name"
+            android:text='@={viewModel.school}'
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <Button
+            style="@style/button"
+            android:text="@string/simpan"
+            android:layout_margin="@dimen/_10sdp"
+            android:onClick="@{() -> activity.onSaveClick()}" />
+    </LinearLayout>
+</layout>

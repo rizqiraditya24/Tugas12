@@ -1,0 +1,50 @@
+<resources>
+    <style name="Base.Theme.DataBase" parent="Theme.Material3.DayNight.NoActionBar">
+    </style>
+
+    <style name="Theme.DataBase" parent="Base.Theme.DataBase" />
+
+    <style name="editTextFriend">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:enabled">false</item>
+        <item name="android:hint">@string/strip</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="editTextAdd">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/_40sdp</item>
+        <item name="android:layout_margin">@dimen/_10sdp</item>
+        <item name="android:inputType">textPersonName</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+    </style>
+
+    <style name="button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:backgroundTint">@color/purple</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="backgroundCard">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="TittleEditTextFriend" parent="editTextFriend">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_marginStart">@dimen/_15sdp</item>
+        <item name="android:layout_marginTop">@dimen/_15sdp</item>
+        <item name="android:textSize">@dimen/_14ssp</item>
+        <item name="android:inputType">textPersonName</item>
+    </style>
+
+    <style name="BodyEditTextFriend" parent="editTextFriend">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_marginStart">@dimen/_15sdp</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:inputType">textPersonName</item>
+    </style>
+
+</resources>

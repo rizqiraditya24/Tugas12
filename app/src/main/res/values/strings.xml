@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">dataBase</string>
+    <string name="tambah">Tambah</string>
+    <string name="nama">Nama…</string>
+    <string name="sekolah">Sekolah…</string>
+    <string name="hobi">Hobi…</string>
+    <string name="simpan">SIMPAN</string>
+    <string name="hapus_semua">Hapus Semua</string>
+    <string name="save">Save</string>
+    <string name="edit">Edit</string>
+    <string name="strip">-</string>
+</resources>
