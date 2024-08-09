@@ -9,4 +9,6 @@
     <string name="save">Save</string>
     <string name="edit">Edit</string>
     <string name="strip">-</string>
+    <string name="display_image">Display Image</string>
+    <string name="input_image">Input Image</string>
 </resources>

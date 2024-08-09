@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.database.data.Friend
 
@@ -22,6 +23,7 @@ class AdapterRV(
         private val etHobby: EditText = itemView.findViewById(R.id.et_hobby)
         private val etSchool: EditText = itemView.findViewById(R.id.et_school)
         private val btnSave: Button = itemView.findViewById(R.id.btn_save)
+        private val ivDisplay: ImageView = itemView.findViewById(R.id.iv_display)
 
         private var isEditModeEnabled = false
 
@@ -57,6 +59,11 @@ class AdapterRV(
             etName.setText(friend.name)
             etHobby.setText(friend.hobby)
             etSchool.setText(friend.school)
+
+            val photoBtm = AddActivity().stringToBitmap(friend.photo)
+            photoBtm?.let {
+                ivDisplay.setImageBitmap(photoBtm)
+            }
 
             updateEditMode()
         }

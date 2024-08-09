@@ -19,6 +19,15 @@
         android:orientation="vertical"
         tools:context=".AddActivity">
 
+        <ImageView
+            android:id="@+id/iv_photo"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_10sdp"
+            android:src="@color/darkPurple"
+            android:contentDescription="@string/input_image"/>
+
         <EditText
             style="@style/editTextAdd"
             android:hint="@string/nama"
